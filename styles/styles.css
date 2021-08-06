@@ -1,0 +1,95 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* body font-family */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+/* football-top part */
+
+
+.top-part{
+    background-color: #562EFF;
+    
+
+}
+.football-heading{
+    display: flex;
+    align-items: center;
+    margin-left: 111px;
+    margin-right: 80px;
+
+}
+h1{
+    font-weight: 700;
+    color: cornsilk;
+}
+a{
+    text-decoration: none;
+    color: beige;
+    border: 1px solid black;
+    background-color: chocolate;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.top-image img{
+    width: 527px;
+    height: 400px;
+    margin-top: 40;
+
+}
+  
+img{
+    margin-top: 30px;
+}
+.image:hover{
+    transform: scale(1.5);
+}
+/* 2nd section */
+
+.football-detail{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    margin-left: 80px;
+    margin-right: 30px;
+}
+
+.image-section, img{
+    width: 300px;
+    height: 256px;
+
+}
+/* last part ----- */
+.last-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.icon{
+    display: flex;
+    color: grey;
+    font-size: 28px;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;    
+}
+/* #media queris */
+@media onlyscreen and(max-width:688px) {
+    .top-part,.football-detail,.last-part{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+}
+
+@media only screen and(min-width:688)and(max-width:992px) {
+    .top-part,.last-part{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .football-detail{
+        grid-template-columns: repeat(2, 6fr);
+    }
+}
+
